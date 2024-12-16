@@ -34,7 +34,19 @@ alt="Web Analytics"&gt;&lt;/a&gt;&lt;/div&gt;</noscript><table summary="Table fo
 <h1>Research</h1>
 </div>  
 
-My research interest lies in <b>optimization</b> and <b>machine learning</b> in <b>distributed or decentralized networks</b>. Distributed or decentralized learning, which involves a series of single devices (workers) collaborating to train a machine learning model, usually serves as a promising solution in the following scenarios:
+My research interest lies in <b>Analog In-memory Computing</b>, <b>optimization</b> and <b>machine learning</b> in <b>distributed or decentralized networks</b>. 
+<h2>Training on Analog In-memory Computing Hardware</h2>
+
+<p>Modern deep model training often requires processing vast amounts of weights and data, which must be transferred between memory and processor, leading to the <b>"von Neumann bottleneck"</b> that can significantly hinder computation speed and efficiency. In this context, <b>Analog in-memory computing (AIMC)</b> is an innovative computing paradigm that utilizes the physical properties of emerging <b>non-volatile memory (NVM)</b> devices to perform computations directly within the memory array. The core concept is to harness the analog storage and processing capabilities of NVM devices to execute <b>matrix-vector multiplication (MVM)</b> operations in a highly parallel and energy-efficient manner. </p>
+
+<p>Training on AIMC hardware, while promising in terms of <b>energy efficiency</b> and <b>speed</b>, faces several significant challenges which comes from hardware imperfection. One major difficulty is the inherent variability and noise in analog hardware, which lead to inaccuracies in computations. Additionally, the precision of analog computations is generally lower than that of digital counterparts, making it harder to achieve the same level of accuracy required for training deep neural networks. Another challenge is the limited endurance and retention of analog memory devices, which can degrade over time and affect the reliability of the training process. Furthermore, integrating analog components with existing digital systems requires sophisticated <b>design and calibration techniques</b> to ensure compatibility and optimal performance.</p>
+
+<p>To address these challenges, my research focuses on developing novel <b>algorithms and techniques</b> that enable effectively train deep neural networks on AIMC hardware.</p>
+
+<img src="images/AIMC illustration.PNG" alt="alt text" width="700px" >
+
+<h2>Distributed Optimization</h2>
+Distributed or decentralized learning, which involves a series of single devices (workers) collaborating to train a machine learning model, usually serves as a promising solution in the following scenarios:
 <ul>
   <li>Accelerate large-scale machine learning through parallel computation in data centers.</li>
   <li>Exploit the potential value of large-volume, heterogeneous, and privacy-sensitive data located at geographically distributed devices in settings like federated learning (FL) or multi-agent reinforcement learning (MARL).</li>
@@ -44,7 +56,7 @@ As one of the central topics in distributed networks, my recent work focus on <b
 
 <br> <br><br> 
 
-<img src="research-byzantine.jpg" alt="alt text" width="700px" >
+<img src="images/research-byzantine.jpg" alt="alt text" width="700px" >
 
 <h2>Journals</h2>
 <ul>
