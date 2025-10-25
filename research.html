@@ -34,14 +34,16 @@ alt="Web Analytics"&gt;&lt;/a&gt;&lt;/div&gt;</noscript><table summary="Table fo
 <h1>Research</h1>
 </div>  
 
-My research interest lies in <b>Analog In-memory Computing</b>, <b>optimization</b> and <b>machine learning</b> in <b>distributed or decentralized networks</b>. 
+My research interest lies in <b>Analog In-memory Computing</b>, <b>optimization</b> and <b>distributed or decentralized machine learning</b>. 
 <h2>Training on Analog In-memory Computing Hardware</h2>
 
-<p>Modern deep model training often requires processing vast amounts of weights and data, which must be transferred between memory and processor, leading to the <b>"von Neumann bottleneck"</b> that can significantly hinder computation speed and efficiency. In this context, <b>Analog in-memory computing (AIMC)</b> is an innovative computing paradigm that utilizes the physical properties of emerging <b>non-volatile memory (NVM)</b> devices to perform computations directly within the memory array. The core concept is to harness the analog storage and processing capabilities of NVM devices to execute <b>matrix-vector multiplication (MVM)</b> operations in a highly parallel and energy-efficient manner. </p>
+<p>Modern deep model training often requires processing vast amounts of weights and data, which necessitates frequent data transfer between memory and processor, leading to the <b>"von Neumann bottleneck"</b> that can significantly hinder computation speed and efficiency. In this context, <b>Analog in-memory computing (AIMC)</b> is an innovative computing paradigm that utilizes the physical properties of emerging <b>Resistive Processing Unit (RPU)</b> devices to perform computations directly within the memory array. Its core principle is to harness the analog storage and processing capabilities of these devices—leveraging the physical laws of Ohm and Kirchhoff—to execute <b>Matrix-Vector Multiplication (MVM)</b> operations in a highly parallel and energy-efficient manner.
 
-<p>Training on AIMC hardware, while promising in terms of <b>energy efficiency</b> and <b>speed</b>, faces several significant challenges which comes from hardware imperfection. One major difficulty is the inherent variability and noise in analog hardware, which lead to inaccuracies in computations. Additionally, the precision of analog computations is generally lower than that of digital counterparts, making it harder to achieve the same level of accuracy required for training deep neural networks. Another challenge is the limited endurance and retention of analog memory devices, which can degrade over time and affect the reliability of the training process. Furthermore, integrating analog components with existing digital systems requires sophisticated <b>design and calibration techniques</b> to ensure compatibility and optimal performance.</p>
+<p>To fully realize the <b>massive parallelism and energy efficiency</b> benefits of AIMC, it is essential to perform the fully on-chip training process of Deep Neural Networks (DNNs) directly on the AIMC hardware. However, this ambitious goal faces significant challenges stemming from the inherent non-idealities of analog hardware. Key difficulties include the non-linear response of RPU devices, the pervasive presence of analog noise during computation, and the limited precision inherent in analog operations. Achieving the high accuracy required for training deep models, especially given these imperfections, remains a formidable obstacle.
+</p>
 
-<p>To address these challenges, my research focuses on developing novel <b>algorithms and techniques</b> that enable effectively train deep neural networks on AIMC hardware.</p>
+<p>Crucially, since these hardware imperfections, such as device non-linearities and analog noise, are fundamentally physical and cannot be entirely eliminated in the foreseeable future, algorithmic solutions become essential. To address this reality, my research focuses on developing novel algorithms and techniques that enable the effective training of DNNs on AIMC hardware. <b>Our core objective is to establish a robust training paradigm that enables deep learning models to seamlessly "coexist" with the intrinsic imperfections of analog accelerators.</b> Specifically, we aim to develop algorithms that are inherently robust against hardware imperfections, ultimately bridging the gap between the computational demands of DNNs and the realities of non-ideal analog in-memory accelerators.
+</p>
 
 <img src="images/AIMC illustration.PNG" alt="alt text" width="700px" >
 
@@ -60,6 +62,13 @@ As one of the central topics in distributed networks, my recent work focus on <b
 
 <h2>Journals</h2>
 <ul>
+
+  <li><p><a href="https://ieeexplore.ieee.org/abstract/document/11050993">On the Trade-Off Between Flatness and Optimization in Distributed Learning</a></p>
+    <ul>
+    <li><p>Ying Cao, <b>Zhaoxian Wu</b>, Kun Yuan, Ali H. Sayed</p></li>
+    <li><p>IEEE Transactions on Pattern Analysis and Machine Intelligence <b>(TPAMI)</b>, 2025</p></li>
+    </ul>
+  </li>
 
   <li><p><a href="https://ieeexplore.ieee.org/abstract/document/11003478">Single-Timescale Multi-Sequence Stochastic Approximation Without Fixed Point Smoothness: Theories and Applications</a></p>
     <ul>
