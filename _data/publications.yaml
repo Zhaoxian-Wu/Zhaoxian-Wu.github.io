@@ -1,0 +1,145 @@
+papers:
+
+  - title: "Analog In-memory Training on General Non-ideal Resistive Elements: The Impact of Response Functions"
+    authors: "<strong><u>Zhaoxian Wu</strong></u>, Quan Xiao, Tayfun Gokmen, Omobayode Fagbohungbe, and Tianyi Chen"
+    venue: "Proc. of Neural Information Processing Systems <strong>(NeurIPS)</strong>"
+    paper_pdf: "https://arxiv.org/pdf/2502.06309"
+    selected: y
+    award:  "Oral, top 0.3% of all submissions"
+    code: "https://github.com/Zhaoxian-Wu/analog-training"
+    label: "NeurIPS (Oral)"
+    year: "2025"
+    fig: "./assets/pub_figure/2025-response.png"
+
+  - title: "On the Trade-Off Between Flatness and Optimization in Distributed Learning"
+    authors: "Ying Cao, <strong><u>Zhaoxian Wu</strong></u>, Kun Yuan, Ali H. Sayed"
+    venue: "IEEE Transactions on Pattern Analysis and Machine Intelligence <b>(TPAMI)</b>"
+    paper_pdf: "https://ieeexplore.ieee.org/abstract/document/11050993"
+    year: "2025"
+    selected: n
+    label: "TPAMI"
+    fig: "./assets/pub_figure/2025-flatness.jpg"
+
+  - title: "Single-Timescale Multi-Sequence Stochastic Approximation Without Fixed Point Smoothness: Theories and Applications"
+    authors: "Yue Huang, <strong><u>Zhaoxian Wu</strong></u>, Shiqian Ma, Qing Ling"
+    venue: "IEEE Transactions on Signal Processing <b>(TSP)</b>"
+    paper_pdf: "https://ieeexplore.ieee.org/abstract/document/11003478"
+    year: "2025"
+    selected: n
+    label: "TSP"
+    fig: "./assets/pub_figure/2025-MSSA.jpg"
+
+  - title: "Towards Exact Gradient-based Training on Analog In-memory Computing"
+    authors: "<strong><u>Zhaoxian Wu</strong></u>, Tayfun Gokmen, Malte J. Rasch, Tianyi Chen"
+    venue: "Conference on Neural Information Processing Systems <b>(NeurIPS)</b>"
+    paper_pdf: "https://arxiv.org/abs/2406.12774"
+    year: "2024"
+    selected: y
+    label: "NeurIPS"
+    fig: "./assets/pub_figure/2024-TT.jpg"
+
+  - title: "Byzantine-Robust Distributed Online Learning: Taming Adversarial Participants in An Adversarial Environment"
+    authors: "Xingrong Dong, <strong><u>Zhaoxian Wu</strong></u>, Qing Ling, Zhi Tian"
+    venue: "IEEE Transactions on Signal Processing <b>(TSP)</b>"
+    paper_pdf: "https://ieeexplore.ieee.org/abstract/document/10354032"
+    year: "2024"
+    selected: n
+    label: "TSP"
+    fig: "./assets/pub_figure/2024-Byz-online.jpg"
+
+  - title: "Byzantine-Resilient Decentralized Stochastic Optimization with Robust Aggregation Rules"
+    authors: "<strong><u>Zhaoxian Wu</strong></u>, Tianyi Chen, Qing Ling"
+    venue: "IEEE Transactions on Signal Processing <b>(TSP)</b>"
+    paper_pdf: "https://ieeexplore.ieee.org/abstract/document/10208131"
+    year: "2023"
+    selected: y
+    label: "TSP"
+    fig: "./assets/pub_figure/2023-ios.jpg"
+
+  - title: "Byzantine-Robust Variance-Reduced Federated Learning over Distributed Non-i.i.d. Data"
+    authors: "Jie Peng, <strong><u>Zhaoxian Wu</strong></u>, Qing Ling"
+    venue: "Information Sciences"
+    paper_pdf: "https://www.sciencedirect.com/science/article/abs/pii/S0020025522012464"
+    year: "2022"
+    selected: n
+    label: "Info. Sci."
+    fig: "./assets/pub_figure/2022-Byrd-bucketing.jpg"
+
+  - title: "Communication-censored Distributed Stochastic Gradient Descent"
+    authors: "Weiyu Li, <strong><u>Zhaoxian Wu</strong></u>, Tianyi Chen, Liping Li, Qing Ling"
+    venue: "IEEE Transactions on Neural Networks and Learning Systems <b>(TNNLS)</b>"
+    paper_pdf: "https://ieeexplore.ieee.org/document/9447173"
+    year: "2021"
+    selected: n
+    label: "TNNLS"
+    fig: "./assets/pub_figure/2021-CSGD.gif"
+
+  - title: "Byzantine-resilient Decentralized Policy Evaluation with Linear Function Approximation"
+    authors: "<strong><u>Zhaoxian Wu</strong></u>, Han Shen, Tianyi Chen, Qing Ling"
+    venue: "IEEE Transactions on Signal Processing <b>(TSP)</b>"
+    paper_pdf: "https://arxiv.org/abs/2009.11146"
+    year: "2021"
+    selected: y
+    label: "TSP"
+    fig: "./assets/pub_figure/2021-Byrd-TD.jpg"
+
+  - title: "Federated Variance-reduced Stochastic Gradient Descent with Robustness to Byzantine Attacks"
+    authors: "<strong><u>Zhaoxian Wu</strong></u>, Qing Ling, Tianyi Chen, and Georgios B Giannakis"
+    venue: "IEEE Transactions on Signal Processing <b>(TSP)</b>"
+    paper_pdf: "https://ieeexplore.ieee.org/abstract/document/9153949"
+    year: "2020"
+    selected: y
+    award: "IEEE SPS Young Author Best Paper Award"
+    label: "TSP"
+    fig: "./assets/pub_figure/2020-Byrd-SAGA.jpg"
+
+  - title: "On the Convergence of Single-Timescale Multi-Sequence Stochastic Approximation Without Fixed Point Smoothness"
+    authors: "Yue Huang, <strong><u>Zhaoxian Wu</strong></u>, Qing Ling"
+    venue: "International Conference on Acoustics, Speech, and Signal Processing <b>(ICASSP)</b>"
+    paper_pdf: "https://ieeexplore.ieee.org/document/10447185"
+    year: "2024"
+    selected: n
+    label: "ICASSP"
+    fig: "./assets/pub_figure/2025-MSSA.jpg"
+
+  - title: "Distributed Online Learning With Adversarial Participants In An Adversarial Environment"
+    authors: "Xingrong Dong, <strong><u>Zhaoxian Wu</strong></u>, Qing Ling, Zhi Tian"
+    venue: "International Conference on Acoustics, Speech, and Signal Processing <b>(ICASSP)</b>"
+    paper_pdf: "https://ieeexplore.ieee.org/abstract/document/10095178"
+    year: "2023"
+    selected: n
+    label: "ICASSP"
+    fig: "./assets/pub_figure/2024-Byz-online.jpg"
+
+  - title: "A Byzantine-resilient Dual Subgradient Method for Vertical Federated Learning"
+    authors: "Kun Yuan, <strong><u>Zhaoxian Wu</strong></u>, Qing Ling"
+    venue: "International Conference on Acoustics, Speech, and Signal Processing <b>(ICASSP)</b>"
+    paper_pdf: "https://ieeexplore.ieee.org/document/9747270"
+    year: "2022"
+    selected: n
+    label: "ICASSP"
+    fig: "./assets/pub_figure/2022-vertical-byz.png"
+
+  - title: "Byzantine-resilient Decentralized TD Learning with Linear Function Approximation"
+    authors: "<strong><u>Zhaoxian Wu</strong></u>, Han Shen, Tianyi Chen, Qing Ling"
+    venue: "International Conference on Acoustics, Speech, and Signal Processing <b>(ICASSP)</b>"
+    paper_pdf: "https://ieeexplore.ieee.org/document/9413992"
+    year: "2021"
+    selected: n
+    label: "ICASSP"
+    fig: "./assets/pub_figure/2021-Byrd-TD.jpg"
+
+  - title: "Byzantine-resilient Distributed Finite-sum Optimization over Networks"
+    authors: "<strong><u>Zhaoxian Wu</strong></u>, Qing Ling, Tianyi Chen, and Georgios B Giannakis"
+    venue: "International Conference on Acoustics, Speech, and Signal Processing <b>(ICASSP)</b>"
+    paper_pdf: "https://ieeexplore.ieee.org/document/9053465"
+    year: "2020"
+    selected: n
+    label: "ICASSP"
+    fig: "./assets/pub_figure/2020-Byrd-SAGA.jpg"
+
+
+
+
+
+

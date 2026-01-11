@@ -1,0 +1,62 @@
+news_items:
+  - item: " I'm honorable to receive the IEEE Signal Processing Society Scholarship"
+    date: "Nov 2025"
+    info_links:
+      - url: "https://signalprocessingsociety.org/newsletter/2025/11/congratulations-2025-sps-scholarship-recipients"
+        text: "info"
+    selected: y
+
+  - item: "Our paper about the ability to escape sharp local minima in decentralized learning systems was accepted in the <b>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</b>"
+    date: "Oct 2025"
+    links:
+      - url: "https://ieeexplore.ieee.org/abstract/document/11050993"
+        text: "On the Trade-Off Between Flatness and Optimization in Distributed Learning"
+    selected: y
+
+  - item: "Our paper about overcoming the hardware imperfection in analog in-memory computing hardware has been accepted as an <b>oral presentation (top 0.3%)</b> at  <b>Conference on Neural Information Processing Systems (NeurIPS 2025)</b>"
+    date: "Sep 2025"
+    links:
+      - url: "https://arxiv.org/abs/2502.06309"
+        text: "Analog In-memory Training on General Non-ideal Resistive Elements: The Impact of Response Functions"
+    selected: y
+
+
+  - item: "Our paper was accepted in the <b>IEEE Transactions on Signal Processing (TSP)</b>"
+    date: "May 2025"
+    links:
+      - url: "https://ieeexplore.ieee.org/abstract/document/11003478"
+        text: "Single-Timescale Multi-Sequence Stochastic Approximation Without Fixed Point Smoothness: Theories and Applications"
+    selected: y
+
+  - item: "Our early work back to 2020 on Byzantine-resilient federated learning has been honored with the <b>IEEE Signal Processing Society Young Author Best Paper Award</b>"
+    date: "Dec 2024"
+    info_links:
+      - url: "https://signalprocessingsociety.org/community-involvement/award-recipients"
+        text: "info"
+      - url: "https://ecse.rpi.edu/news/ecse-student-and-faculty-won-ieee-signal-processing-society-young-author-best-paper-award"
+        text: "more info"
+    links:
+      - url: "https://ieeexplore.ieee.org/abstract/document/9153949"
+        text: "Federated Variance-Reduced Stochastic Gradient Descent With Robustness to Byzantine Attacks"
+    selected: y
+
+  - item: "Our paper was accepted in the <b>Conference on Neural Information Processing Systems (NeurIPS 2024)</b>"
+    date: "Sep 2024"
+    links:
+      - url: "https://arxiv.org/abs/2406.12774"
+        text: "Towards Exact Gradient-based Training on Analog In-memory Computing"
+    selected: y
+
+  - item: "Our paper was accepted in the <b>IEEE Transactions on Signal Processing (TSP)</b>"
+    date: "Dec 2023"
+    links:
+      - url: "https://arxiv.org/abs/2406.12774"
+        text: "Byzantine-Robust Distributed Online Learning: Taming Adversarial Participants in An Adversarial Environment"
+    selected: y
+
+  - item: "Our paper was accepted in the <b>IEEE Transactions on Signal Processing (TSP)</b>"
+    date: "Aug 2023"
+    links:
+      - url: "https://ieeexplore.ieee.org/abstract/document/10208131"
+        text: "Byzantine-Resilient Decentralized Stochastic Optimization with Robust Aggregation Rules"
+    selected: y

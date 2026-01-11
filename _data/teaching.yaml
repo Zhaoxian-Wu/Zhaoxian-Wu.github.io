@@ -1,0 +1,6 @@
+# _data/teaching.yaml
+html: |
+    <ul>
+        <li><strong>Guest Lecturer</strong> for RPI ECSE-4964/6964 Distributed Optimization & Machine Learning, Spring 2025</li>
+        <li><strong>Guest Lecturer</strong> for RPI ECSE-2500 <a href="https://catalog.rpi.edu/preview_course_nopop.php?catoid=10&coid=16685">Engineering Probability</a>, Fall 2024</li>
+    </ul>

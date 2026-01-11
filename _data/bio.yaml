@@ -1,0 +1,21 @@
+# _data/bio.yaml
+html: |
+  <!-- ========== BIO ========== -->
+    <h4>About me</h4>
+    <div class="bio‑intro">
+      <p>
+        I am currently pursuing my Ph.D. degree in <a href="https://www.engineering.cornell.edu/ece/" target="_blank">Electrical and Computer Engineering</a> at <a href="https://www.cornell.edu" target="_blank">Cornell University</a>, 
+        based at the <a href="https://tech.cornell.edu" target="_blank">Cornell Tech Campus</a> in New York City, fortunately advised by
+        <a href="https://chen.tech.cornell.edu/" target="_blank">Prof.&nbsp;Tianyi Chen</a>.  
+        Prior to that, I have spent two years at the <a href=https://ecse.rpi.edu target='_blank'>Rensselaer Polytechnic Institute</a> and transferred with my advisor.  
+        I received the bachelor's and master's degree from Sun Yat-sen University under the supervision of <a href="http://home.ustc.edu.cn/~qingling/">Prof. Qing Ling</a>. 
+      </p>
+    </div> 
+
+    <!----- 
+    <div class="bio‑highlight">
+      <p>At the core of my research is the question: <strong>How can optimization shape the next generation of AI?</strong></p>
+    </div>
+    -->
+    
+

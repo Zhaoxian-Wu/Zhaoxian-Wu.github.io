@@ -1,0 +1,21 @@
+# _data/internship.yaml
+html: |
+  <ul class="education">
+    <li>
+      <span class="year">2025 – present</span>
+      <span class="details">Ph.D., Electrical and Computer Engineering, <a href="https://tech.cornell.edu">Cornell University</a></span> New York, NY
+    </li>
+    <li>
+      <span class="year">2023 – 2025</span>
+      <span class="details">Ph.D., Electrical, Computer, and Systems Engineering, <a href="https://www.rpi.edu">Rensselaer Polytechnic Institute</a></span> Troy, NY
+    </li>
+    <li>
+      <span class="year">2020 – 2023</span>
+      <span class="details">M.E., Computer Science, <a href="https://cse.sysu.edu.cn/">Sun Yat-sen University</a></span> Guangzhou, China
+    </li>
+    <li>
+      <span class="year">2016 – 2020</span>
+      <span class="details">B.E., Software Engineering, <a href="https://cse.sysu.edu.cn/">Sun Yat-sen University</a></span> Guangdong, China
+    </li>
+  </ul>
+

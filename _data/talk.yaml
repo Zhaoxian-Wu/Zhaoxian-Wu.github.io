@@ -1,0 +1,24 @@
+# _data/talk.yaml
+html: |
+    <ul>
+        <li><a href="https://cpal.cc">Conference on Parsimony and Learning (CPAL)</a>, Stanford, CA, March, 2025
+            <ul>
+                <li>Global Convergence for Bilevel Optimization: A Pilot Study</li>
+            </ul>
+        </li>
+        <li><a href="https://www.asilomarsscconf.org/">Asilomar Conference on Signals, Systems, and Computers</a>, Pacific Grove, CA, Nov, 2024
+            <ul>
+                <li>Global Convergence for Bilevel Optimization: A Pilot Study</li>
+            </ul>
+        </li>
+        <li><a href="https://www.asilomarsscconf.org/">Asilomar Conference on Signals, Systems, and Computers</a>, Pacific Grove, CA, Nov, 2023
+            <ul>
+                <li>Solving A Class of Bilevel Optimization Without Lower-level Strong Convexity</li>
+            </ul>
+        </li>
+        <li><a href="https://www.siam.org/conferences/cm/conference/op23">SIAM Conference on Optimization (OP23)</a>, Seattle, WA, June, 2023
+            <ul>
+                <li>Solving A Class of Bilevel Optimization Without Lower-level Strong Convexity</li>
+            </ul>
+        </li>
+    </ul>

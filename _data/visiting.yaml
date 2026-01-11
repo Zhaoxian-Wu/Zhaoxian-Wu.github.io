@@ -1,0 +1,20 @@
+# _data/visiting.yaml
+html: |
+      <ul>
+        <li>
+          School of Data and Computer Science, Sun Yat-Sen University
+          <ul>
+            <li>
+              Host: <a href="http://home.ustc.edu.cn/~qingling/">Prof. Qing Ling</a>, August 2020 - July 2021
+            </li>
+          </ul>
+        </li>
+        <li>
+          Department of <a href="https://cmse.msu.edu/">Computational Mathematics, Science and Engineering</a>, Michigan State University
+          <ul>
+            <li>
+              Host: <a href="https://directory.natsci.msu.edu/Directory/Profiles/Person/101084/">Prof. Yuying Xie</a>, July - October, 2019
+            </li>
+          </ul>
+        </li>
+      </ul>

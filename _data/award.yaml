@@ -1,0 +1,11 @@
+# _data/award.yaml
+html: |
+    <ul>
+        <li><a href="https://signalprocessingsociety.org/newsletter/2025/11/congratulations-2025-sps-scholarship-recipients">IEEE Signal Processing Society Scholarship</a>, 2025</li>
+        <li><a href="https://signalprocessingsociety.org/community-involvement/award-recipients">IEEE Signal Processing Society Young Author Best Paper Award</a>, 2024</li>
+        <li>China Institute of Electronics Master's Thesis Incentive Program (2023)</li>
+        <li>National Academic Scholarship, 2017</li>
+        <li>Outstanding Undergraduate Thesis in SYSU, 2020</li>
+        <li>Outstanding Paper at Graduate Student Forum of The Mathematical Programming Branch of Operations Research Society of China, 2021</li>
+        <li>ICASSP travel grant, 2020</li>
+    </ul>

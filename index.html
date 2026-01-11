@@ -1,167 +1,323 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head>
-<!-- Google tag (gtag.js) -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-76BLNR920M"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-    
-  gtag('config', 'G-76BLNR920M');
-</script>
-<meta name="google-site-verification" content="C4r0SmjTG14-FQFEYkVnw9U84lnlNDHyqvHTIWR2Bsw">
-<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/">
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-<link rel="icon" href="cty.png">
-<link rel="stylesheet" href="jemdoc.css" type="text/css">
-<title>Zhaoxian Wu</title>
-</head>
-<body>
-<noscript>&lt;div class="statcounter"&gt;&lt;a title="Web Analytics"
-href="https://statcounter.com/" target="_blank"&gt;&lt;img
-class="statcounter"
-src="https://c.statcounter.com/10867279/0/cab9fef6/1/"
-alt="Web Analytics"&gt;&lt;/a&gt;&lt;/div&gt;</noscript><table summary="Table for page layout." id="tlayout">
-<tbody><tr valign="top">
-<td id="layout-menu">
-<div class="menu-category">Menu</div>
-<div class="menu-item"><a href="index.html" class="current">Home</a></div>
-<div class="menu-item"><a href="research.html" class="current">Research</a></div>
-<!-- <div class="menu-item"><a href="publications.html" class="current">Publications</a></div> -->
-</td>
-<td id="layout-content">
-<div id="toptitle">
-<h1>Zhaoxian Wu</h1>
+---
+layout: default
+title: Home
+---
+<!-- bio.html (include or part of a page) -->
+<section class="bio‑section" id="bio">
+{{ site.data.bio.html | raw }}
+</section>
+
+<!-- ========== EDUCATION ========== -->
+<div class="docs-section" id="education">
+  <h4>Education</h4>
+      {{ site.data.education.html | raw }}
+</div> <!-- end of .docs-section -->
+
+<!-- ========== RESEARCH ========== -->
+<div class="docs-section" id="research">
+  <h4>Research</h4>
+  {{ site.data.research.html | raw }}
 </div>
-<table class="imgtable"><tbody><tr><td>
-<a href="https://Zhaoxian-Wu.github.io/"><img src="image-2025.01.18.JPG" alt="alt text" width="150px" ></a>&nbsp;</td>
-<td align="left">
 
-<p> <b>Zhaoxian Wu</b></p>  
-Ph.D. Student<br>
-<a href="https://tech.cornell.edu/">Department of Electrical and Computer Engineering</a> <br>
-<a href="https://tech.cornell.edu/">Cornell University</a> <p></p>
+<!-- ========== NEWS ========== -->
+<div class="docs-section" id="news">
+  <h4>News</h4>
 
- <br>
- E-mail: zw868 [@] cornell [.] edu<br> 
- <p></p>
+  <ul class="tab-nav">
+    <li><div class="button active" data-ref="#news-recent">Recent News</div></li>
+    <li><div class="button" data-ref="#news-old">Old News</div></li>
+  </ul>
+
+  <div class="tab-content">
+    <div class="tab-pane active" id="news-recent">
+      {% assign recent_news = site.data.news.news_items | where: "selected", "y" %}
+
+      {% for news_item in recent_news %}
+      <div class="news-item">
+        <b> <span class="label-badge">{{ news_item.date }}</span></b>
+        {{ news_item.item }}
+        {% for link in news_item.info_links %}
+          (<a href="{{ link.url }}" target="_blank">{{ link.text }}</a>)
+        {% endfor %}
+        {% if news_item.links %}
+        <ul class="news-links">
+        {% for link in news_item.links %}
+          <li><a href="{{ link.url }}" target="_blank">{{ link.text }}</a></li>
+        {% endfor %}
+        </ul>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+    <div class="tab-pane" id="news-old">
+      {% assign old_news = site.data.news.news_items %}
+      {% for news_item in old_news %}
+      <div class="news-item">
+        <b> <span class="label-badge">{{ news_item.date }}</span></b>
+        {{ news_item.item }}
+        {% for link in news_item.info_links %}
+          (<a href="{{ link.url }}" target="_blank">{{ link.text }}</a>)
+        {% endfor %}
+        {% if news_item.links %}
+        <ul class="news-links">
+        {% for link in news_item.links %}
+          <li><a href="{{ link.url }}" target="_blank">{{ link.text }}</a></li>
+        {% endfor %}
+        </ul>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+
+
+<!-- ========== PUBLICATIONS ========== -->
+<div class="docs-section" id="publications">
+  <h4>Publications</h4>
+
+   
+  <p>
+    For the most up-to-date list of publications, please visit my  
+    <a href="{{ site.data.main_info.google_scholar }}"
+       target="_blank"
+       rel="noopener noreferrer">
+      Google Scholar 
+    </a>
+  </p>
+
+
+  <ul class="tab-nav">
+    <li><div class="button active" data-ref="#papers-selected">Selected</div></li>
+    <li><div class="button" data-ref="#papers-all">All</div></li>
+  </ul>
+
+  <div class="tab-content">
+    <div class="tab-pane active" id="papers-selected">
+      {% assign selected_papers = site.data.publications.papers | where: "selected", "y" %}
+      {% for paper in selected_papers %}
+        <div class="paper" style="
+          display: table;
+          width: 100%;
+          margin-bottom: 1.5em;  /* spacing between papers */
+          table-layout: fixed;   /* ensures columns don’t jump around */
+          border-bottom: 0.5px dashed grey;
+        ">
+        <!-- The row -->
+      <div style="display: table-row;">
+        <!-- Left cell: Figure with overlayed label -->
+    <div style="
+      display: table-cell;
+      vertical-align: top;
+      width: 18em;
+      white-space: nowrap;
+    ">
+      <div class="fig-container" style="position: relative; display: inline-block; width: 18em; text-align: center;">
+        {% if paper.fig %}
+          <img 
+            src="{{ paper.fig | relative_url }}" 
+            style="display: block; margin: 0 auto; max-width: 100%; max-height: 180px;"
+          >
+        {% endif %}
+        {% if paper.label %}
+          <span class="label-badge" style="
+            position: absolute;
+            top: -10px;
+            left: 0;
+          ">
+            {{ paper.label }}
+          </span>
+        {% endif %}
+      </div>
+    </div>
+
+          <div class="paper-details" style="
+              display: table-cell;
+              vertical-align: middle;
+              padding-left: 1em; /* space between badge and text */
+            ">
+            <!-- Paper Title -->
+            <p class="title"><b>{{ paper.title }}</b></p>
+            <p>{{ paper.authors }}</p>
+            <p><i>{{ paper.venue }}</i>{% if paper.year %}, {{ paper.year }}.{% endif %}</p>
+            {% if paper.award %}
+            <p><i class="fa fa-trophy" style="color:#0046AC"></i> <b>{{ paper.award }}</b></p>
+            {% endif %}
+            <div class="paper-buttons">
+              {% if paper.paper_pdf %}
+                <a class="button" href="{{ paper.paper_pdf }}" target="_blank">Paper</a>
+              {% endif %}
+
+              {% if paper.preprint %}
+                <a class="button" href="{{ paper.preprint }}" target="_blank">Preprint</a>
+              {% endif %}
+
+              {% if paper.code %}
+                <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
+              {% endif %}
+
+              {% if paper.data %}
+                <a class="button" href="{{ paper.data }}" target="_blank">Data</a>
+              {% endif %}
+
+              {% if paper.prereg %}
+                <a class="button" href="{{ paper.prereg }}" target="_blank">Registration</a>
+              {% endif %}
+              
+              {% if paper.slides %}
+                <a class="button" href="{{ paper.slides }}" target="_blank">Slides</a>
+              {% endif %}
+
+              {% if paper.poster %}
+                <a class="button" href="{{ paper.poster }}" target="_blank">Poster</a>
+              {% endif %}
+
+              {% if paper.video %}
+                <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
  
-<a href="https://scholar.google.com/citations?user=Hyk4lXJy4CEC&hl=en">Google Scholar</a><br>
-<a href="https://github.com/zhaoxian-wu">Github</a><br>
-<a href="https://www.linkedin.com/in/wuzhx/">Linkedin</a><br>
 
-</td></tr></tbody></table>
+    <div class="tab-pane" id="papers-all">
+      {% for paper in site.data.publications.papers %}
+        <div class="paper" style="
+          display: table;
+          width: 100%;
+          margin-bottom: 1.5em;  /* spacing between papers */
+          table-layout: fixed;   /* ensures columns don’t jump around */
+          border-bottom: 0.5px dashed grey;
+        ">
+        <!-- The row -->
+      <div style="display: table-row;">
+        <!-- Left cell: Figure with overlayed label -->
+    <div style="
+      display: table-cell;
+      vertical-align: top;
+      width: 18em;
+      white-space: nowrap;
+    ">
+      <div class="fig-container" style="position: relative; display: inline-block; width: 18em; text-align: center;">
+        {% if paper.fig %}
+          <img 
+            src="{{ paper.fig | relative_url }}" 
+            style="display: block; margin: 0 auto; max-width: 100%; max-height: 180px;"
+          >
+        {% endif %}
+        {% if paper.label %}
+          <span class="label-badge" style="
+            position: absolute;
+            top: -10px;
+            left: 0;
+          ">
+            {{ paper.label }}
+          </span>
+        {% endif %}
+      </div>
+    </div>
 
+          <div class="paper-details" style="
+              display: table-cell;
+              vertical-align: middle;
+              padding-left: 1em; /* space between badge and text */
+            ">
+            <!-- Paper Title -->
+            <p class="title"><b>{{ paper.title }}</b></p>
+            <p>{{ paper.authors }}</p>
+            <p><i>{{ paper.venue }}</i>{% if paper.year %}, {{ paper.year }}.{% endif %}</p>
+            {% if paper.award %}
+            <p><i class="fa fa-trophy" style="color:#0046AC"></i> <b>{{ paper.award }}</b></p>
+            {% endif %}
+            <div class="paper-buttons">
+              {% if paper.paper_pdf %}
+                <a class="button" href="{{ paper.paper_pdf }}" target="_blank">Paper</a>
+              {% endif %}
 
+              {% if paper.preprint %}
+                <a class="button" href="{{ paper.preprint }}" target="_blank">Preprint</a>
+              {% endif %}
 
-<h2>About me</h2>
-<p> 
-I am now pursuing my Ph.D. degree at Cornell Tech and Cornell University, fortunate to be advised by <a href="https://www.ecse.rpi.edu/people/faculty/tianyi-chen">Prof. Tianyi Chen</a>. 
-</p> 
-<p> 
-Prior to joining RPI and Cornell, I received the bachelor's and master's degree from Sun Yat-sen University under the supervision of <a href="http://home.ustc.edu.cn/~qingling/">Prof. Qing Ling</a>. 
-</p> 
+              {% if paper.code %}
+                <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
+              {% endif %}
 
-<b>Research interests</b>: Analog In-memory Computing; Optimization in deep learning
+              {% if paper.data %}
+                <a class="button" href="{{ paper.data }}" target="_blank">Data</a>
+              {% endif %}
 
-<br> 
+              {% if paper.prereg %}
+                <a class="button" href="{{ paper.prereg }}" target="_blank">Registration</a>
+              {% endif %}
+              
+              {% if paper.slides %}
+                <a class="button" href="{{ paper.slides }}" target="_blank">Slides</a>
+              {% endif %}
 
+              {% if paper.poster %}
+                <a class="button" href="{{ paper.poster }}" target="_blank">Poster</a>
+              {% endif %}
 
-<!-- trustworthy machine learning that addresses issues related to robustness, privacy, fairness and generalization, especially in federated learning and vision/language models. I got my bachelor’s degree from Computer Science department at Zhejiang University in July 2020. I did internships at AI algorithm group of NVIDIA Research and visual computing group of Microsoft Research Asia. -->
-
-  
-<h2>Education</h2>
-<ul>
-<li><p> <a href="https://tech.cornell.edu/"> Cornell Tech and Cornell University</a>, New York, New York, USA: Ph.D. student, Electrical Engineering, 2025 - Present</p>
-</li>
-<li><p> <a href="https://www.ecse.rpi.edu/"> Rensselaer Polytechnic Institute</a>, Troy, New York, USA: Ph.D. student, Electrical Engineering, 2023 - 2025</p>
-</li>
-<li> <p> <a href="https://cse.sysu.edu.cn/"> Sun Yat-sen University</a>, Guangzhou, Guangdong, China: M.E., Computer Science, 2020 - 2023</p>
-</li>
-<li> <p> <a href="https://cse.sysu.edu.cn/"> Sun Yat-sen University</a>, Guangzhou, Guangdong, China: B.E., Software Engineering, 2016 - 2020</p>
-</li>
-</ul>
-
-
-<h2>Recent News</h2>
-<ul>
-  
-  <li>
-    <p>Oct 2025: Our paper about the ability to escape sharp local minima in decentralized learning systems was accepted in the <b>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</b>:</p>
-    <ul>
-      <a href="https://ieeexplore.ieee.org/abstract/document/11050993">On the Trade-Off Between Flatness and Optimization in Distributed Learning</a>. 
-    </ul>
-  </li>
-  
-  <li>
-    <p>Sep 2025: Our paper about overcoming the hardware imperfection in analog in-memory computing hardware has been accepted as an <b>oral presentation (top 0.3%)</b> at  <b>Conference on Neural Information Processing Systems (NeurIPS 2025)</b>:</p>
-    <ul>
-      <a href="https://arxiv.org/abs/2502.06309">Analog In-memory Training on General Non-ideal Resistive Elements: The Impact of Response Functions</a>. 
-    </ul>
-  </li> 
-
-
-  <li>
-    <p>May 2025: Our paper was accepted in the <b>IEEE Transactions on Signal Processing (TSP)</b>:</p>
-    <ul>
-      <a href="https://ieeexplore.ieee.org/abstract/document/11003478">Single-Timescale Multi-Sequence Stochastic Approximation Without Fixed Point Smoothness: Theories and Applications</a>. 
-    </ul>
-  </li>
-
-  <li>
-    <p>Dec 2024: Our early work back to 2020 on Byzantine-resilient federated learning has been honored with the <b>IEEE Signal Processing Society Young Author Best Paper Award</b> 
-      <a href="https://signalprocessingsociety.org/community-involvement/award-recipients">(info)</a>
-      <a href="https://ecse.rpi.edu/news/ecse-student-and-faculty-won-ieee-signal-processing-society-young-author-best-paper-award">(more info)</a>:</p>
-    <ul>
-      <a href="https://ieeexplore.ieee.org/abstract/document/9153949">Federated Variance-Reduced Stochastic Gradient Descent With Robustness to Byzantine Attacks</a>. 
-    </ul>
-  </li>
-
-  <li>
-    <p>Sep 2024: Our paper was accepted in the <b>Conference on Neural Information Processing Systems (NeurIPS 2024)</b>:</p>
-    <ul>
-      <a href="https://arxiv.org/abs/2406.12774">Towards Exact Gradient-based Training on Analog In-memory Computing</a>. 
-    </ul>
-  </li>
-
-  <li>
-    <p>Dec 2023: Our paper was accepted in the <b>IEEE Transactions on Signal Processing (TSP)</b>:</p>
-    <ul>
-      <a href="https://arxiv.org/abs/2406.12774">Byzantine-Robust Distributed Online Learning: Taming Adversarial Participants in An Adversarial Environment</a>. 
-    </ul>
-  </li>
-
-  <li>
-    <p>Aug 2023: Our paper was accepted in the <b>IEEE Transactions on Signal Processing (TSP)</b>:</p>
-    <ul>
-      <a href="https://ieeexplore.ieee.org/abstract/document/10208131">Byzantine-Resilient Decentralized Stochastic Optimization with Robust Aggregation Rules</a>. 
-    </ul>
-    <!-- <p>&nbsp; &nbsp; Another paper was accepted in the <b>2023 American Control Conference (ACC)</b>!:</p>
-    <ul>  <li><a href="https://arxiv.org/pdf/2209.12307.pdf">On the Stability Analysis of Open Federated Learning Systems</a>.</li> </ul>
-  <p></p> -->
-  </li>
-</ul>
-
-<div id="footer">
-<div id="footer-text">
-Page generated by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+              {% if paper.video %}
+                <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
 </div>
+
+
+<!-- ========== EXPERIENCE ========== -->  
+<div class="docs-section" id="experience">
+  <h4>Experience</h4>
+  <ul class="tab-nav">
+    <!-- <li><div class="button" data-ref="#internship">Internship</div></li>
+    <li><div class="button" data-ref="#visiting">Visiting Experience</div></li>
+    <li><div class="button" data-ref="#talk">Invited Talk</div></li> -->
+    <li><div class="button active" data-ref="#teaching">Teaching</div></li>
+    <li><div class="button" data-ref="#services">Services</div></li>
+  </ul>
+  <div class="tab-content">
+    <!-- <div class="tab-pane" id="internship">
+      {{ site.data.internship.html | raw }}
+    </div>
+    <div class="tab-pane" id="visiting">
+      {{ site.data.visiting.html | raw }}
+    </div>
+    <div class="tab-pane" id="talk">
+      {{ site.data.talk.html | raw }}
+    </div> -->
+    <div class="tab-pane active" id="teaching">
+      {{ site.data.teaching.html | raw }}
+    </div>
+    <div class="tab-pane" id="services">
+      {{ site.data.service.html | raw }}
+    </div> 
+  </div> <!-- end of .tab-content -->
+</div> <!-- end of .docs-section -->
+
+
+<!-- ========== Award ========== -->  
+<div class="docs-section" id="Award">
+    <h4>Awards & Honors</h4>
+    {{ site.data.award.html | raw }}
 </div>
-</td>
-</tr>
-<!-- Default Statcounter code for Tianyi Chen
-http://chentianyi1991.github.io/,
- https://chentianyi1991.github.io/index.html,
- https://ecse.rpi.ed -->
-<script type="text/javascript">
-var sc_project=10867279; 
-var sc_invisible=1; 
-var sc_security="cab9fef6"; 
-</script>
-<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async=""></script>
-
-<!-- End of Statcounter Code -->
-</tbody></table>
 
 
-</body></html>
+<!-- ========== THANKS ========== -->  
+<!--
+<div class="docs-section" id="template">
+    <h4>Website Design</h4>
+    Design by <a href="https://web.stanford.edu/~msaveski/" target="_blank">Martin Saveski</a>, forked by permission from <a href="https://github.com/msaveski/www_personal" target="_blank">his Github</a>. My version has some additional features; you can fork it from <a href="https://github.com/mmoorr/www_personal" target="_blank">here</a>.
+</div>
+-->
+

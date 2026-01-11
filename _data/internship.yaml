@@ -1,0 +1,19 @@
+# _data/internship.yaml
+html: |
+      <ul>
+        <li>
+          <a href="https://www.ibm.com/watson">IBM Thomas J. Watson Research Center</a>
+          <ul>
+            <li>
+              Uncertainty quantification and fine-tuning in LLM. Mentor/Manager: 
+              <a href="https://scholar.google.com/citations?user=pwfVt-MAAAAJ&hl=en">Dr. Debarun Bhattacharjya</a> and managed by 
+              <a href="https://scholar.google.com/citations?user=j54RzcEAAAAJ&hl=en">Dr. Dharmashankar Subramanian</a>, May-Aug, 2024
+            </li>
+            <li>
+              Bilevel optimization with lower-level nonconvexity. Mentor/Manager: 
+              <a href="https://songtaogithub.github.io/">Dr. Songtao Lu</a> and 
+              <a href="https://researcher.watson.ibm.com/researcher/view.php?person=us-lhoresh">Dr. Lior Horesh</a>, May-Aug, 2022
+            </li>
+          </ul>
+        </li>
+      </ul>
