@@ -1,4 +1,13 @@
 news_items:
+  - item: "Our work was featured on the Cornell Chronicle, Cornell Tech website."
+    date: "Dec 2025"
+    links:
+      - url: "https://news.cornell.edu/stories/2025/12/researchers-tackle-ais-energy-problem-greener-fix"
+        text: "Researchers Tackle AI’s Energy Problem with a Greener Fix (Cornell Chronicle)"
+      - url: "https://tech.cornell.edu/news/ai-energy-analog-in-memory-computing/"
+        text: "Researchers Tackle AI’s Energy Problem with a Greener Fix (Cornell Tech website)"
+    selected: y
+
   - item: " I'm honorable to receive the IEEE Signal Processing Society Scholarship"
     date: "Nov 2025"
     info_links:
