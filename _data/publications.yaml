@@ -45,7 +45,7 @@ papers:
     year: "2024"
     selected: n
     label: "TSP"
-    fig: "./assets/pub_figure/2024-Byz-online.jpg"
+    fig: "./assets/pub_figure/2024-byz-online.jpg"
 
   - title: "Byzantine-Resilient Decentralized Stochastic Optimization with Robust Aggregation Rules"
     authors: "<strong><u>Zhaoxian Wu</strong></u>, Tianyi Chen, Qing Ling"
@@ -109,7 +109,7 @@ papers:
     year: "2023"
     selected: n
     label: "ICASSP"
-    fig: "./assets/pub_figure/2024-Byz-online.jpg"
+    fig: "./assets/pub_figure/2024-byz-online.jpg"
 
   - title: "A Byzantine-resilient Dual Subgradient Method for Vertical Federated Learning"
     authors: "Kun Yuan, <strong><u>Zhaoxian Wu</strong></u>, Qing Ling"
