@@ -35,6 +35,7 @@ papers:
     paper_pdf: "https://arxiv.org/abs/2406.12774"
     year: "2024"
     selected: y
+    code: "https://github.com/Zhaoxian-Wu/analog-training"
     label: "NeurIPS"
     fig: "./assets/pub_figure/2024-TT.jpg"
 
@@ -44,6 +45,7 @@ papers:
     paper_pdf: "https://ieeexplore.ieee.org/abstract/document/10354032"
     year: "2024"
     selected: n
+    code: "https://github.com/wanger521/OGD"
     label: "TSP"
     fig: "./assets/pub_figure/2024-byz-online.jpg"
 
@@ -53,6 +55,7 @@ papers:
     paper_pdf: "https://ieeexplore.ieee.org/abstract/document/10208131"
     year: "2023"
     selected: y
+    code: "https://github.com/Zhaoxian-Wu/IOS"
     label: "TSP"
     fig: "./assets/pub_figure/2023-ios.jpg"
 
@@ -62,6 +65,7 @@ papers:
     paper_pdf: "https://www.sciencedirect.com/science/article/abs/pii/S0020025522012464"
     year: "2022"
     selected: n
+    code: "https://github.com/pengj97/Byzantine-robust-variance-reduction"
     label: "Info. Sci."
     fig: "./assets/pub_figure/2022-Byrd-bucketing.jpg"
 
@@ -71,6 +75,7 @@ papers:
     paper_pdf: "https://ieeexplore.ieee.org/document/9447173"
     year: "2021"
     selected: n
+    code: "https://github.com/Zhaoxian-Wu/CSGD"
     label: "TNNLS"
     fig: "./assets/pub_figure/2021-CSGD.gif"
 
@@ -80,6 +85,7 @@ papers:
     paper_pdf: "https://arxiv.org/abs/2009.11146"
     year: "2021"
     selected: y
+    code: "https://github.com/Zhaoxian-Wu/Byrd-TD"
     label: "TSP"
     fig: "./assets/pub_figure/2021-Byrd-TD.jpg"
 
@@ -90,6 +96,7 @@ papers:
     year: "2020"
     selected: y
     award: "IEEE SPS Young Author Best Paper Award"
+    code: "https://github.com/Zhaoxian-Wu/Byrd-SAGA"
     label: "TSP"
     fig: "./assets/pub_figure/2020-Byrd-SAGA.jpg"
 
@@ -126,6 +133,7 @@ papers:
     paper_pdf: "https://ieeexplore.ieee.org/document/9413992"
     year: "2021"
     selected: n
+    code: "https://github.com/Zhaoxian-Wu/Byrd-TD"
     label: "ICASSP"
     fig: "./assets/pub_figure/2021-Byrd-TD.jpg"
 
@@ -135,6 +143,7 @@ papers:
     paper_pdf: "https://ieeexplore.ieee.org/document/9053465"
     year: "2020"
     selected: n
+    code: "https://github.com/Zhaoxian-Wu/Byrd-SAGA"
     label: "ICASSP"
     fig: "./assets/pub_figure/2020-Byrd-SAGA.jpg"
 
