@@ -1,4 +1,13 @@
 papers:
+  - title: "In-memory Training on Analog Devices with Limited Conductance States via Multi-tile Residual Learning"
+    authors: "Jindan Li, <strong><u>Zhaoxian Wu</strong></u>, Gaowen Liu, Tayfun Gokmen, and Tianyi Chen"
+    venue: "Proc. of International Conference on Artificial Intelligence and Statistics <strong>(AISTATS)</strong>"
+    paper_pdf: "https://arxiv.org/pdf/2510.02516"
+    selected: n
+    code: "https://github.com/Jjindanli898/AIMC"
+    label: "AISTATS"
+    year: "2026"
+    fig: "./assets/pub_figure/2025-multi-tile.png"
 
   - title: "Analog In-memory Training on General Non-ideal Resistive Elements: The Impact of Response Functions"
     authors: "<strong><u>Zhaoxian Wu</strong></u>, Quan Xiao, Tayfun Gokmen, Omobayode Fagbohungbe, and Tianyi Chen"

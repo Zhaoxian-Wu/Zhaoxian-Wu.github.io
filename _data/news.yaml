@@ -1,4 +1,11 @@
 news_items:
+  - item: "Our paper about alliviating the precision of analog training was accepted by <b>International Conference on Artificial Intelligence and Statistics (AISTATS 2026)</b>"
+    date: "Jan 2026"
+    links:
+      - url: "https://arxiv.org/pdf/2510.02516"
+        text: "In-memory Training on Analog Devices with Limited Conductance States via Multi-tile Residual Learning"
+    selected: y
+
   - item: "Our work was featured on the Cornell Chronicle, Cornell Tech website."
     date: "Dec 2025"
     links:
@@ -61,11 +68,11 @@ news_items:
     links:
       - url: "https://arxiv.org/abs/2406.12774"
         text: "Byzantine-Robust Distributed Online Learning: Taming Adversarial Participants in An Adversarial Environment"
-    selected: y
+    selected: n
 
   - item: "Our paper was accepted in the <b>IEEE Transactions on Signal Processing (TSP)</b>"
     date: "Aug 2023"
     links:
       - url: "https://ieeexplore.ieee.org/abstract/document/10208131"
         text: "Byzantine-Resilient Decentralized Stochastic Optimization with Robust Aggregation Rules"
-    selected: y
+    selected: n
