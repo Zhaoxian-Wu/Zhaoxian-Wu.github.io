@@ -1,4 +1,18 @@
 news_items:
+  - item: "Our paper about dynamic symmetric point tracking for analog in-memory training was accepted by <b>International Conference on Machine Learning (ICML 2026)</b>. We propose a method to dynamically estimate the device-specific symmetric point during training and leverage signal processing to correct asymmetric bias in analog hardware updates."
+    date: "Apr 2026"
+    links:
+      - url: "https://arxiv.org/abs/2602.21321"
+        text: "Dynamic Symmetric Point Tracking: Tackling Non-ideal Reference in Analog In-memory Training"
+    selected: y
+
+  - item: "Our paper about pipeline gradient-based analog in-memory training was accepted by <b>IEEE Journal on Selected Areas in Information Theory (JSAIT)</b>. We establish convergence guarantees for both synchronous and asynchronous pipeline parallelism on analog in-memory accelerators, characterizing sampling and clock-cycle complexity under hardware non-idealities."
+    date: "Apr 2026"
+    links:
+      - url: "https://ieeexplore.ieee.org/abstract/document/11500465"
+        text: "On the Convergence Theory of Pipeline Gradient-based Analog In-memory Training"
+    selected: y
+
   - item: "Our paper about alliviating the precision of analog training was accepted by <b>International Conference on Artificial Intelligence and Statistics (AISTATS 2026)</b>"
     date: "Jan 2026"
     links:

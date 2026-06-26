@@ -1,4 +1,22 @@
 papers:
+  - title: "Dynamic Symmetric Point Tracking: Tackling Non-ideal Reference in Analog In-memory Training"
+    authors: "Quan Xiao, Jindan Li, <strong><u>Zhaoxian Wu</strong></u>, Tayfun Gokmen, Tianyi Chen"
+    venue: "Proc. of International Conference on Machine Learning <strong>(ICML)</strong>"
+    paper_pdf: "https://arxiv.org/abs/2602.21321"
+    year: "2026"
+    selected: y
+    label: "ICML"
+    fig: "./assets/pub_figure/2026-symmetric-point.png"
+
+  - title: "On the Convergence Theory of Pipeline Gradient-based Analog In-memory Training"
+    authors: "<strong><u>Zhaoxian Wu</strong></u>, Quan Xiao, Tayfun Gokmen, Hsinyu Tsai, Kaoutar El Maghraoui, Tianyi Chen"
+    venue: "IEEE Journal on Selected Areas in Information Theory <b>(JSAIT)</b>"
+    paper_pdf: "https://ieeexplore.ieee.org/abstract/document/11500465"
+    year: "2026"
+    selected: y
+    label: "JSAIT"
+    fig: "./assets/pub_figure/2024-pipeline.png"
+
   - title: "In-memory Training on Analog Devices with Limited Conductance States via Multi-tile Residual Learning"
     authors: "Jindan Li, <strong><u>Zhaoxian Wu</strong></u>, Gaowen Liu, Tayfun Gokmen, and Tianyi Chen"
     venue: "Proc. of International Conference on Artificial Intelligence and Statistics <strong>(AISTATS)</strong>"
