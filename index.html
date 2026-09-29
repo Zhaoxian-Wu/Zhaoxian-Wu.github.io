@@ -23,16 +23,17 @@ title: Home
 <div class="docs-section" id="news">
   <h4>News</h4>
 
-  <ul class="tab-nav">
-    <li><div class="button active" data-ref="#news-recent">Recent News</div></li>
-    <li><div class="button" data-ref="#news-old">Old News</div></li>
+  <ul class="tab-nav tab-nav--filter">
+    <li><div class="button active" data-view="selected">Recent News</div></li>
+    <li><div class="button" data-view="all">Old News</div></li>
   </ul>
 
-  <div class="tab-content">
-    <div class="tab-pane active" id="news-recent">
-      {% assign recent_news = site.data.news.news_items | where: "selected", "y" %}
-
-      {% for news_item in recent_news %}
+  <div class="tab-content tab-content--filter is-condensed">
+    <div class="tab-pane active" id="news-list">
+      {% for news_item in site.data.news.news_items %}
+      {% unless news_item.selected == "y" %}
+      <div class="tab-extra"><div class="tab-extra-inner">
+      {% endunless %}
       <div class="news-item">
         <b> <span class="label-badge">{{ news_item.date }}</span></b>
         {{ news_item.item }}
@@ -47,25 +48,9 @@ title: Home
         </ul>
         {% endif %}
       </div>
-      {% endfor %}
-    </div>
-    <div class="tab-pane" id="news-old">
-      {% assign old_news = site.data.news.news_items %}
-      {% for news_item in old_news %}
-      <div class="news-item">
-        <b> <span class="label-badge">{{ news_item.date }}</span></b>
-        {{ news_item.item }}
-        {% for link in news_item.info_links %}
-          (<a href="{{ link.url }}" target="_blank">{{ link.text }}</a>)
-        {% endfor %}
-        {% if news_item.links %}
-        <ul class="news-links">
-        {% for link in news_item.links %}
-          <li><a href="{{ link.url }}" target="_blank">{{ link.text }}</a></li>
-        {% endfor %}
-        </ul>
-        {% endif %}
-      </div>
+      {% unless news_item.selected == "y" %}
+      </div></div>
+      {% endunless %}
       {% endfor %}
     </div>
   </div>
@@ -88,105 +73,17 @@ title: Home
   </p>
 
 
-  <ul class="tab-nav">
-    <li><div class="button active" data-ref="#papers-selected">Selected</div></li>
-    <li><div class="button" data-ref="#papers-all">All</div></li>
+  <ul class="tab-nav tab-nav--filter">
+    <li><div class="button active" data-view="selected">Selected</div></li>
+    <li><div class="button" data-view="all">All</div></li>
   </ul>
 
-  <div class="tab-content">
-    <div class="tab-pane active" id="papers-selected">
-      {% assign selected_papers = site.data.publications.papers | where: "selected", "y" %}
-      {% for paper in selected_papers %}
-        <div class="paper" style="
-          display: table;
-          width: 100%;
-          margin-bottom: 1.5em;  /* spacing between papers */
-          table-layout: fixed;   /* ensures columns don’t jump around */
-          border-bottom: 0.5px dashed grey;
-        ">
-        <!-- The row -->
-      <div style="display: table-row;">
-        <!-- Left cell: Figure with overlayed label -->
-    <div style="
-      display: table-cell;
-      vertical-align: top;
-      width: 18em;
-      white-space: nowrap;
-    ">
-      <div class="fig-container" style="position: relative; display: inline-block; width: 18em; text-align: center;">
-        {% if paper.fig %}
-          <img 
-            src="{{ paper.fig | relative_url }}" 
-            style="display: block; margin: 0 auto; max-width: 100%; max-height: 180px;"
-          >
-        {% endif %}
-        {% if paper.label %}
-          <span class="label-badge" style="
-            position: absolute;
-            top: -10px;
-            left: 0;
-          ">
-            {{ paper.label }}
-          </span>
-        {% endif %}
-      </div>
-    </div>
-
-          <div class="paper-details" style="
-              display: table-cell;
-              vertical-align: middle;
-              padding-left: 1em; /* space between badge and text */
-            ">
-            <!-- Paper Title -->
-            <p class="title"><b>{{ paper.title }}</b></p>
-            <p>{{ paper.authors }}</p>
-            <p><i>{{ paper.venue }}</i>{% if paper.year %}, {{ paper.year }}.{% endif %}</p>
-            {% if paper.award %}
-            <p><i class="fa fa-trophy" style="color:#0046AC"></i> <b>{{ paper.award }}</b></p>
-            {% endif %}
-            <div class="paper-buttons">
-              {% if paper.paper_pdf %}
-                <a class="button" href="{{ paper.paper_pdf }}" target="_blank">Paper</a>
-              {% endif %}
-
-              {% if paper.preprint %}
-                <a class="button" href="{{ paper.preprint }}" target="_blank">Preprint</a>
-              {% endif %}
-
-              {% if paper.code %}
-                <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
-              {% endif %}
-
-              {% if paper.data %}
-                <a class="button" href="{{ paper.data }}" target="_blank">Data</a>
-              {% endif %}
-
-              {% if paper.prereg %}
-                <a class="button" href="{{ paper.prereg }}" target="_blank">Registration</a>
-              {% endif %}
-              
-              {% if paper.slides %}
-                <a class="button" href="{{ paper.slides }}" target="_blank">Slides</a>
-              {% endif %}
-
-              {% if paper.poster %}
-                <a class="button" href="{{ paper.poster }}" target="_blank">Poster</a>
-              {% endif %}
-
-              {% if paper.video %}
-                <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
-              {% endif %}
-            </div>
-          </div>
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-
- 
-
-    <div class="tab-pane" id="papers-all">
+  <div class="tab-content tab-content--filter is-condensed">
+    <div class="tab-pane active" id="papers-list">
       {% for paper in site.data.publications.papers %}
+      {% unless paper.selected == "y" %}
+      <div class="tab-extra"><div class="tab-extra-inner">
+      {% endunless %}
         <div class="paper" style="
           display: table;
           width: 100%;
@@ -228,7 +125,13 @@ title: Home
               padding-left: 1em; /* space between badge and text */
             ">
             <!-- Paper Title -->
-            <p class="title"><b>{{ paper.title }}</b></p>
+            <p class="title">
+              {% if paper.paper_pdf %}
+                <a class="paper-title-link" href="{{ paper.paper_pdf }}" target="_blank" rel="noopener noreferrer">{{ paper.title }}</a>
+              {% else %}
+                <b>{{ paper.title }}</b>
+              {% endif %}
+            </p>
             <p>{{ paper.authors }}</p>
             <p><i>{{ paper.venue }}</i>{% if paper.year %}, {{ paper.year }}.{% endif %}</p>
             {% if paper.award %}
@@ -270,6 +173,9 @@ title: Home
           </div>
         </div>
       </div>
+      {% unless paper.selected == "y" %}
+      </div></div>
+      {% endunless %}
       {% endfor %}
     </div>
   </div>
@@ -320,4 +226,3 @@ title: Home
     Design by <a href="https://web.stanford.edu/~msaveski/" target="_blank">Martin Saveski</a>, forked by permission from <a href="https://github.com/msaveski/www_personal" target="_blank">his Github</a>. My version has some additional features; you can fork it from <a href="https://github.com/mmoorr/www_personal" target="_blank">here</a>.
 </div>
 -->
-

@@ -1,6 +1,13 @@
 h4 {
   letter-spacing: .1rem; 
 }
+html {
+  scroll-behavior: smooth;
+}
+#bio,
+.docs-section {
+  scroll-margin-top: 7.5rem;
+}
 .container {
 /*CMG: width*/
   max-width: 980px; }
@@ -68,15 +75,57 @@ h4 {
   margin-top: 0; /* Removes any extra space above title */
 }
 .paper-details {
-  /* This keeps your text in one aligned column */
+  padding-left: 1em !important;
 }
 .paper {
+  position: relative;
+  z-index: 0;
   display: flex;          /* Put label and details side by side */
   align-items: flex-start; /* So label and text align nicely at the top */
-  margin-bottom: 20px }
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+.paper::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: -14px -16px;
+  pointer-events: none;
+  background: #fff;
+  border: 1px solid #c5d8ef;
+  border-radius: 10px;
+  box-shadow: 0 8px 22px rgba(68, 133, 199, 0.16);
+  opacity: 0;
+  transform: scale(0.98);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.paper:hover {
+  transform: translateY(-2px);
+  z-index: 1;
+}
+.paper:hover::before {
+  opacity: 1;
+  transform: scale(1);
+}
 .paper .title {
   display: inline;
+  transition: color 0.18s ease;
   /*text-transform: uppercase; */}
+.paper .paper-title-link {
+  color: inherit;
+  font-weight: bold;
+  text-decoration: none;
+}
+.paper:hover .title {
+  color: #0046AC;
+}
+.paper .fig-container img {
+  transform-origin: center;
+  transition: transform 0.4s ease;
+}
+.paper:hover .fig-container img {
+  transform: scale(1.04);
+}
 .paper p {
   margin-bottom: 2px }
 .paper-buttons {
@@ -89,11 +138,51 @@ h4 {
   line-height: 25px;
   border: 1px solid #6A0DAD; /* Purple border */
   color: #6A0DAD; /* Purple text and border */
-  transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
   text-transform: none; }
 /* Hover effect */
 .paper .button:hover {
     background: rgba(106, 13, 173, 0.08); /* Purple with 70% opacity */
+}
+
+@media (min-width: 751px) {
+  .paper {
+    display: grid !important;
+    grid-template-columns: 18em minmax(0, 1fr);
+    width: 100%;
+  }
+  .paper > div[style*="display: table-row"] {
+    display: contents !important;
+  }
+  .paper > div[style*="display: table-row"] > div:first-child {
+    display: block !important;
+    width: 18em !important;
+    align-self: start;
+  }
+  .paper .fig-container {
+    width: 100% !important;
+  }
+  .paper-details {
+    display: block !important;
+    min-width: 0;
+    align-self: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .paper,
+  .paper .title,
+  .paper .fig-container img,
+  .paper::before,
+  .navbar-link,
+  .navbar-link::before,
+  .news-item,
+  .news-item::before {
+    transition: none;
+  }
 }
 
 
@@ -204,6 +293,8 @@ h4 {
     float: left;
     margin-bottom: 0; }
   .navbar-link {
+    position: relative;
+    display: inline-block;
     text-transform: uppercase;
     font-size: 11px;
     font-weight: 600;
@@ -211,7 +302,27 @@ h4 {
     margin-right: 35px;
     text-decoration: none;
     line-height: 6.5rem;
-    color: #222; }
+    color: #222;
+    transition: color 0.3s ease; }
+  .navbar-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #0046AC;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  .navbar-link:hover,
+  .navbar-link:focus {
+    color: #0046AC;
+    text-decoration: none; }
+  .navbar-link:hover::before,
+  .navbar-link:focus::before {
+    transform: scaleX(1);
+  }
   .navbar-link.active {
     color: #33C3F0; }
   .has-docked-nav .navbar {
@@ -306,7 +417,35 @@ h4 {
 }
 
 .news-item {
+  position: relative;
+  z-index: 0;
   margin-bottom: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.news-item::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: -12px -14px;
+  pointer-events: none;
+  background: #fff;
+  border: 1px solid #c5d8ef;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(68, 133, 199, 0.12);
+  opacity: 0;
+  transform: scale(0.98);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.news-item:hover {
+  transform: translateY(-2px);
+  z-index: 1;
+}
+
+.news-item:hover::before {
+  opacity: 1;
+  transform: scale(1);
 }
 
 /* News: remove extra space under each link item */

@@ -16,6 +16,7 @@ ul.tab-nav li .button {
     border-bottom-right-radius: 0;
     margin-bottom: -1px;
     border-bottom: none;
+    transition: color 0.18s ease, border-color 0.18s ease;
 }
 
 ul.tab-nav li .active.button {
@@ -30,4 +31,92 @@ ul.tab-nav li .active.button {
 
 .tab-content .tab-pane.active {
     display: block;
+}
+
+.tab-content--filter .tab-extra {
+    display: grid;
+    grid-template-rows: 1fr;
+    opacity: 1;
+    visibility: visible;
+    transition: grid-template-rows 460ms cubic-bezier(0.2, 0.7, 0.2, 1), opacity 320ms ease, visibility 0s;
+}
+
+.tab-content--filter .tab-extra-inner {
+    min-height: 0;
+    min-width: 0;
+}
+
+.tab-content--filter.is-condensed .tab-extra {
+    grid-template-rows: 0fr;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: grid-template-rows 460ms cubic-bezier(0.2, 0.7, 0.2, 1), opacity 320ms ease, visibility 0s linear 460ms;
+}
+
+.tab-content--filter.is-condensed .tab-extra-inner,
+.tab-content--filter.is-filter-animating .tab-extra-inner {
+    overflow: hidden;
+}
+
+/* Stack both panels for the switch without changing their width or layout. */
+.tab-content.is-transitioning {
+    display: grid;
+    overflow: hidden;
+}
+
+.tab-content.is-transitioning .tab-pane.active {
+    grid-area: 1 / 1;
+    min-width: 0;
+}
+
+.tab-content .tab-pane--exit-left {
+    animation: tab-exit-left 520ms cubic-bezier(0.4, 0, 0.2, 1) both;
+    pointer-events: none;
+}
+
+.tab-content .tab-pane--enter-right {
+    animation: tab-enter-right 520ms cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+
+.tab-content .tab-pane--exit-right {
+    animation: tab-exit-right 520ms cubic-bezier(0.4, 0, 0.2, 1) both;
+    pointer-events: none;
+}
+
+.tab-content .tab-pane--enter-left {
+    animation: tab-enter-left 520ms cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+
+@keyframes tab-exit-left {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
+}
+
+@keyframes tab-enter-right {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes tab-exit-right {
+    from { transform: translateX(0); }
+    to { transform: translateX(100%); }
+}
+
+@keyframes tab-enter-left {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .tab-content--filter .tab-extra {
+        transition: none;
+    }
+
+    .tab-content .tab-pane--exit-left,
+    .tab-content .tab-pane--enter-right,
+    .tab-content .tab-pane--exit-right,
+    .tab-content .tab-pane--enter-left {
+        animation: none;
+    }
 }
