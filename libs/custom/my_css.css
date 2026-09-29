@@ -9,6 +9,23 @@ h4 {
   margin-bottom: 20px; 
   padding: 0px 0px;
   text-align: left; }
+.header .row {
+  display: grid;
+  grid-template-columns: minmax(0, 30.6666666667%) minmax(0, 65.3333333333%);
+  column-gap: 4%;
+}
+.header .row > .columns {
+  float: none;
+  width: auto;
+  margin-left: 0;
+}
+.header .row > .four.columns {
+  position: relative;
+}
+.header .row > .four.columns a {
+  position: absolute;
+  inset: 0;
+}
 .main-description {
   height: auto;}
 .main-description h1 {
@@ -19,7 +36,15 @@ h4 {
   font-size: 22px;
   margin-top: 5px; }
 .profile {
+  display: block;
   height: auto;
+  max-height: 100%;
+}
+@media (max-width: 549px) {
+  .header .row {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
 }
 /* CMG: Conference Label*/
 .label-badge {
@@ -362,4 +387,3 @@ h4 {
 .education .details {
   flex: 1;            /* take remaining space */
 }
-

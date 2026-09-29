@@ -88,29 +88,6 @@ $(document).ready(function() {
     })
   }
 
-  // Ensure profile image column doesn't exceed text column height
-  function capProfileImageHeight() {
-    var $img = $("img.profile");
-    var $text = $(".main-description");
-    if ($img.length && $text.length) {
-      var h = $text.outerHeight();
-      // Set max-height to text column height
-      $img.css({
-        'max-height': h + 'px',
-        'height': 'auto'
-      });
-    }
-  }
-
-  // Run on load and resize (after fonts/layout settle)
-  $window.on('load', function(){
-    capProfileImageHeight();
-    // slight delay to handle async font/icon loading
-    setTimeout(capProfileImageHeight, 150);
-  });
-  $window.on('resize', capProfileImageHeight);
-
-
   init();
 
 });
