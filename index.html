@@ -127,8 +127,9 @@ title: Home
             {% endunless %}
             <!-- Paper Title -->
             <p class="title">
-              {% if paper.paper_pdf %}
-                <a class="paper-title-link" href="{{ paper.paper_pdf }}" target="_blank" rel="noopener noreferrer">{{ paper.title }}</a>
+              {% assign paper_title_url = paper.paper_pdf | default: paper.preprint %}
+              {% if paper_title_url %}
+                <a class="paper-title-link" href="{{ paper_title_url }}" target="_blank" rel="noopener noreferrer">{{ paper.title }}</a>
               {% else %}
                 <b>{{ paper.title }}</b>
               {% endif %}

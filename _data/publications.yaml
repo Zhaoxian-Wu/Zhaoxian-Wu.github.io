@@ -1,10 +1,49 @@
 papers:
+  - title: "Making Analog Training Scale: Co-Designing Mapping, Optimizer, and Converters"
+    authors: "<strong><u>Zhaoxian Wu</strong></u>, Tayfun Gokmen, Omobayode Fagbohungbe, T. Patrick Xiao, and Tianyi Chen"
+    venue: "arXiv preprint"
+    preprint: "https://arxiv.org/abs/2609.36584"
+    year: "2026"
+    selected: y
+    code: "https://github.com/Zhaoxian-Wu/scalable-analog-training"
+    label: "Preprint"
+    fig: "./assets/pub_figure/transparent/2026-scalable-analog.webp"
+
+  - title: "The Price of Locality: Why Forward-Forward Underperforms Backpropagation?"
+    authors: "<strong><u>Zhaoxian Wu</strong></u>, Haichuan Liu, and Tianyi Chen"
+    venue: "Conference on Neural Information Processing Systems <b>(NeurIPS)</b>"
+    paper_pdf: "https://arxiv.org/abs/2609.33240"
+    year: "2026"
+    selected: y
+    code: "https://github.com/Zhaoxian-Wu/ffa-theory"
+    label: "NeurIPS"
+    fig: "./assets/pub_figure/transparent/2026-FFA.webp"
+
+  - title: "Optimization under Persistent State-Dependent Bias: Gradient-based Method and Complexity Analysis"
+    authors: "<strong><u>Zhaoxian Wu</strong></u>, Quan Xiao, Tayfun Gokmen, and Tianyi Chen"
+    venue: "arXiv preprint"
+    preprint: "https://arxiv.org/pdf/2607.26032"
+    year: "2026"
+    selected: y
+    code: "https://github.com/Zhaoxian-Wu/analog-training"
+    label: "Preprint"
+    fig: "./assets/pub_figure/transparent/2026-residual-learning.webp"
+
+  - title: "Breaking the Asymmetry Barrier in Analog In-Memory Training: A Signal Processing Solution"
+    authors: "Quan Xiao, Jindan Li, <strong><u>Zhaoxian Wu</strong></u>, Tayfun Gokmen, and Tianyi Chen"
+    venue: "Asilomar Conference on Signals, Systems, and Computers"
+    year: "2026"
+    selected: n
+    label: "Asilomar"
+    fig: "./assets/pub_figure/transparent/2026-ERIDER-frequency.webp"
+
   - title: "Dynamic Symmetric Point Tracking: Tackling Non-ideal Reference in Analog In-memory Training"
     authors: "Quan Xiao, Jindan Li, <strong><u>Zhaoxian Wu</strong></u>, Tayfun Gokmen, Tianyi Chen"
-    venue: "Proc. of International Conference on Machine Learning <strong>(ICML)</strong>"
+    venue: "International Conference on Machine Learning <strong>(ICML)</strong>"
     paper_pdf: "https://arxiv.org/abs/2602.21321"
     year: "2026"
     selected: y
+    code: "https://github.com/Jindanli898/E-RIDER"
     label: "ICML"
     fig: "./assets/pub_figure/2026-symmetric-point.png"
 
@@ -15,28 +54,28 @@ papers:
     year: "2026"
     selected: y
     label: "JSAIT"
-    fig: "./assets/pub_figure/2024-pipeline.png"
+    fig: "./assets/pub_figure/transparent/2024-pipeline.webp"
 
   - title: "In-memory Training on Analog Devices with Limited Conductance States via Multi-tile Residual Learning"
     authors: "Jindan Li, <strong><u>Zhaoxian Wu</strong></u>, Gaowen Liu, Tayfun Gokmen, and Tianyi Chen"
     venue: "Proc. of International Conference on Artificial Intelligence and Statistics <strong>(AISTATS)</strong>"
     paper_pdf: "https://arxiv.org/pdf/2510.02516"
     selected: n
-    code: "https://github.com/Jjindanli898/AIMC"
+    code: "https://github.com/Jindanli898/AIMC"
     label: "AISTATS"
     year: "2026"
-    fig: "./assets/pub_figure/2025-multi-tile.png"
+    fig: "./assets/pub_figure/transparent/2025-multi-tile.webp"
 
   - title: "Analog In-memory Training on General Non-ideal Resistive Elements: The Impact of Response Functions"
     authors: "<strong><u>Zhaoxian Wu</strong></u>, Quan Xiao, Tayfun Gokmen, Omobayode Fagbohungbe, and Tianyi Chen"
-    venue: "Proc. of Neural Information Processing Systems <strong>(NeurIPS)</strong>"
+    venue: "Conference on Neural Information Processing Systems <strong>(NeurIPS)</strong>"
     paper_pdf: "https://arxiv.org/pdf/2502.06309"
     selected: y
     award:  "Oral, top 0.3% of all submissions"
     code: "https://github.com/Zhaoxian-Wu/analog-training"
     label: "NeurIPS (Oral)"
     year: "2025"
-    fig: "./assets/pub_figure/2025-response.png"
+    fig: "./assets/pub_figure/transparent/2025-response.webp"
 
   - title: "On the Trade-Off Between Flatness and Optimization in Distributed Learning"
     authors: "Ying Cao, <strong><u>Zhaoxian Wu</strong></u>, Kun Yuan, Ali H. Sayed"
@@ -45,7 +84,7 @@ papers:
     year: "2025"
     selected: n
     label: "TPAMI"
-    fig: "./assets/pub_figure/2025-flatness.jpg"
+    fig: "./assets/pub_figure/transparent/2025-flatness.webp"
 
   - title: "Single-Timescale Multi-Sequence Stochastic Approximation Without Fixed Point Smoothness: Theories and Applications"
     authors: "Yue Huang, <strong><u>Zhaoxian Wu</strong></u>, Shiqian Ma, Qing Ling"
@@ -54,7 +93,7 @@ papers:
     year: "2025"
     selected: n
     label: "TSP"
-    fig: "./assets/pub_figure/2025-MSSA.jpg"
+    fig: "./assets/pub_figure/transparent/2025-MSSA.webp"
 
   - title: "Towards Exact Gradient-based Training on Analog In-memory Computing"
     authors: "<strong><u>Zhaoxian Wu</strong></u>, Tayfun Gokmen, Malte J. Rasch, Tianyi Chen"
@@ -64,7 +103,7 @@ papers:
     selected: y
     code: "https://github.com/Zhaoxian-Wu/analog-training"
     label: "NeurIPS"
-    fig: "./assets/pub_figure/2024-TT.jpg"
+    fig: "./assets/pub_figure/transparent/2024-TT.webp"
 
   - title: "Byzantine-Robust Distributed Online Learning: Taming Adversarial Participants in An Adversarial Environment"
     authors: "Xingrong Dong, <strong><u>Zhaoxian Wu</strong></u>, Qing Ling, Zhi Tian"
@@ -74,7 +113,7 @@ papers:
     selected: n
     code: "https://github.com/wanger521/OGD"
     label: "TSP"
-    fig: "./assets/pub_figure/2024-byz-online.jpg"
+    fig: "./assets/pub_figure/transparent/2024-byz-online.webp"
 
   - title: "Byzantine-Resilient Decentralized Stochastic Optimization with Robust Aggregation Rules"
     authors: "<strong><u>Zhaoxian Wu</strong></u>, Tianyi Chen, Qing Ling"
@@ -84,7 +123,7 @@ papers:
     selected: y
     code: "https://github.com/Zhaoxian-Wu/IOS"
     label: "TSP"
-    fig: "./assets/pub_figure/2023-ios.jpg"
+    fig: "./assets/pub_figure/transparent/2023-ios.webp"
 
   - title: "Byzantine-Robust Variance-Reduced Federated Learning over Distributed Non-i.i.d. Data"
     authors: "Jie Peng, <strong><u>Zhaoxian Wu</strong></u>, Qing Ling"
@@ -94,7 +133,7 @@ papers:
     selected: n
     code: "https://github.com/pengj97/Byzantine-robust-variance-reduction"
     label: "Info. Sci."
-    fig: "./assets/pub_figure/2022-Byrd-bucketing.jpg"
+    fig: "./assets/pub_figure/transparent/2022-Byrd-bucketing.webp"
 
   - title: "Communication-censored Distributed Stochastic Gradient Descent"
     authors: "Weiyu Li, <strong><u>Zhaoxian Wu</strong></u>, Tianyi Chen, Liping Li, Qing Ling"
@@ -104,7 +143,7 @@ papers:
     selected: n
     code: "https://github.com/Zhaoxian-Wu/CSGD"
     label: "TNNLS"
-    fig: "./assets/pub_figure/2021-CSGD.gif"
+    fig: "./assets/pub_figure/transparent/2021-CSGD.webp"
 
   - title: "Byzantine-resilient Decentralized Policy Evaluation with Linear Function Approximation"
     authors: "<strong><u>Zhaoxian Wu</strong></u>, Han Shen, Tianyi Chen, Qing Ling"
@@ -114,7 +153,7 @@ papers:
     selected: y
     code: "https://github.com/Zhaoxian-Wu/Byrd-TD"
     label: "TSP"
-    fig: "./assets/pub_figure/2021-Byrd-TD.jpg"
+    fig: "./assets/pub_figure/transparent/2021-Byrd-TD.webp"
 
   - title: "Federated Variance-reduced Stochastic Gradient Descent with Robustness to Byzantine Attacks"
     authors: "<strong><u>Zhaoxian Wu</strong></u>, Qing Ling, Tianyi Chen, and Georgios B Giannakis"
@@ -125,7 +164,7 @@ papers:
     award: "IEEE SPS Young Author Best Paper Award"
     code: "https://github.com/Zhaoxian-Wu/Byrd-SAGA"
     label: "TSP"
-    fig: "./assets/pub_figure/2020-Byrd-SAGA.jpg"
+    fig: "./assets/pub_figure/transparent/2020-Byrd-SAGA.webp"
 
   - title: "On the Convergence of Single-Timescale Multi-Sequence Stochastic Approximation Without Fixed Point Smoothness"
     authors: "Yue Huang, <strong><u>Zhaoxian Wu</strong></u>, Qing Ling"
@@ -134,7 +173,7 @@ papers:
     year: "2024"
     selected: n
     label: "ICASSP"
-    fig: "./assets/pub_figure/2025-MSSA.jpg"
+    fig: "./assets/pub_figure/transparent/2025-MSSA.webp"
 
   - title: "Distributed Online Learning With Adversarial Participants In An Adversarial Environment"
     authors: "Xingrong Dong, <strong><u>Zhaoxian Wu</strong></u>, Qing Ling, Zhi Tian"
@@ -143,7 +182,7 @@ papers:
     year: "2023"
     selected: n
     label: "ICASSP"
-    fig: "./assets/pub_figure/2024-byz-online.jpg"
+    fig: "./assets/pub_figure/transparent/2024-byz-online.webp"
 
   - title: "A Byzantine-resilient Dual Subgradient Method for Vertical Federated Learning"
     authors: "Kun Yuan, <strong><u>Zhaoxian Wu</strong></u>, Qing Ling"
@@ -152,7 +191,7 @@ papers:
     year: "2022"
     selected: n
     label: "ICASSP"
-    fig: "./assets/pub_figure/2022-vertical-byz.png"
+    fig: "./assets/pub_figure/transparent/2022-vertical-byz.webp"
 
   - title: "Byzantine-resilient Decentralized TD Learning with Linear Function Approximation"
     authors: "<strong><u>Zhaoxian Wu</strong></u>, Han Shen, Tianyi Chen, Qing Ling"
@@ -162,7 +201,7 @@ papers:
     selected: n
     code: "https://github.com/Zhaoxian-Wu/Byrd-TD"
     label: "ICASSP"
-    fig: "./assets/pub_figure/2021-Byrd-TD.jpg"
+    fig: "./assets/pub_figure/transparent/2021-Byrd-TD.webp"
 
   - title: "Byzantine-resilient Distributed Finite-sum Optimization over Networks"
     authors: "<strong><u>Zhaoxian Wu</strong></u>, Qing Ling, Tianyi Chen, and Georgios B Giannakis"
@@ -172,10 +211,6 @@ papers:
     selected: n
     code: "https://github.com/Zhaoxian-Wu/Byrd-SAGA"
     label: "ICASSP"
-    fig: "./assets/pub_figure/2020-Byrd-SAGA.jpg"
-
-
-
-
+    fig: "./assets/pub_figure/transparent/2020-Byrd-SAGA.webp"
 
 

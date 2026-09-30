@@ -1,4 +1,11 @@
 news_items:
+  - item: "Our paper was accepted by the <b>Conference on Neural Information Processing Systems (NeurIPS 2026)</b>. We study when the Forward-Forward Algorithm (FFA), a promising alternative to backpropagation (BP), falls behind BP and examine its failure modes."
+    date: "Sep 2026"
+    links:
+      - url: "https://arxiv.org/abs/2609.33240"
+        text: "The Price of Locality: Why Forward-Forward Underperforms Backpropagation?"
+    selected: y
+
   - item: "Our paper about dynamic symmetric point tracking for analog in-memory training was accepted by <b>International Conference on Machine Learning (ICML 2026)</b>. We propose a method to dynamically estimate the device-specific symmetric point during training and leverage signal processing to correct asymmetric bias in analog hardware updates."
     date: "Apr 2026"
     links:
