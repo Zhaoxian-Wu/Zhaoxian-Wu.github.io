@@ -84,29 +84,26 @@ title: Home
       {% unless paper.selected == "y" %}
       <div class="tab-extra"><div class="tab-extra-inner">
       {% endunless %}
-        <div class="paper" style="
+        <div class="paper{% unless paper.fig %} paper--no-figure{% endunless %}" style="
           display: table;
           width: 100%;
-          margin-bottom: 1.5em;  /* spacing between papers */
           table-layout: fixed;   /* ensures columns don’t jump around */
-          border-bottom: 0.5px dashed grey;
         ">
         <!-- The row -->
       <div style="display: table-row;">
         <!-- Left cell: Figure with overlayed label -->
-    <div style="
+    {% if paper.fig %}
+    <div class="paper-figure" style="
       display: table-cell;
       vertical-align: top;
       width: 18em;
       white-space: nowrap;
     ">
       <div class="fig-container" style="position: relative; display: inline-block; width: 18em; text-align: center;">
-        {% if paper.fig %}
           <img 
             src="{{ paper.fig | relative_url }}" 
             style="display: block; margin: 0 auto; max-width: 100%; max-height: 180px;"
           >
-        {% endif %}
         {% if paper.label %}
           <span class="label-badge" style="
             position: absolute;
@@ -118,12 +115,16 @@ title: Home
         {% endif %}
       </div>
     </div>
+    {% endif %}
 
           <div class="paper-details" style="
               display: table-cell;
               vertical-align: middle;
               padding-left: 1em; /* space between badge and text */
             ">
+            {% unless paper.fig %}
+              {% if paper.label %}<p><span class="label-badge">{{ paper.label }}</span></p>{% endif %}
+            {% endunless %}
             <!-- Paper Title -->
             <p class="title">
               {% if paper.paper_pdf %}

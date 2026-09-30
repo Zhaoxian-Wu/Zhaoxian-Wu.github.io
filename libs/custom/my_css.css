@@ -82,14 +82,16 @@ html {
   z-index: 0;
   display: flex;          /* Put label and details side by side */
   align-items: flex-start; /* So label and text align nicely at the top */
-  margin-bottom: 20px;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  border-bottom: 0.5px dashed grey;
   transition: transform 0.3s ease;
 }
 .paper::before {
   content: "";
   position: absolute;
   z-index: -1;
-  inset: -14px -16px;
+  inset: -14px -16px 10px;
   pointer-events: none;
   background: #fff;
   border: 1px solid #c5d8ef;
@@ -154,7 +156,7 @@ html {
   .paper > div[style*="display: table-row"] {
     display: contents !important;
   }
-  .paper > div[style*="display: table-row"] > div:first-child {
+  .paper > div[style*="display: table-row"] > .paper-figure {
     display: block !important;
     width: 18em !important;
     align-self: start;
@@ -166,6 +168,12 @@ html {
     display: block !important;
     min-width: 0;
     align-self: center;
+  }
+  .paper--no-figure {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .paper--no-figure .paper-details {
+    padding-left: 0 !important;
   }
 }
 
@@ -191,8 +199,6 @@ html {
   /* 1. let each publication flow naturally, one element per line */
   .paper { 
     display: block !important;          /* overrides “display: table” */
-    border-bottom: 0.5px dashed grey;   /* keep the separator */
-    margin-bottom: 1.5em;
   }
 
   /* 2. the inner “row” wrapper is no longer needed */
