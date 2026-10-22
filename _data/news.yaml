@@ -1,5 +1,5 @@
 news_items:
-  - item: "Our paper was accepted by the <b>Conference on Neural Information Processing Systems (NeurIPS 2026)</b>. We study when the Forward-Forward Algorithm (FFA), a promising alternative to backpropagation (BP), falls behind BP and examine its failure modes."
+  - item: "Our paper was accepted by the <b>Conference on Neural Information Processing Systems (NeurIPS 2026)</b>. We study when the Forward-Forward Algorithm (FFA), a promising alternative to backpropagation (BP), falls behind BP and examine its failure modes (<a href='https://zhaoxian-wu.github.io/ffa-theory/' target='_blank' rel='noopener noreferrer'>project homepage</a>)."
     date: "Sep 2026"
     links:
       - url: "https://arxiv.org/abs/2609.33240"
