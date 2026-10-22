@@ -6,6 +6,7 @@ papers:
     year: "2026"
     selected: y
     code: "https://github.com/Zhaoxian-Wu/scalable-analog-training"
+    homepage: "https://zhaoxian-wu.github.io/scalable-analog-training/"
     label: "Preprint"
     fig: "./assets/pub_figure/transparent/2026-scalable-analog.webp"
 
