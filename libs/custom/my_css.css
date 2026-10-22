@@ -134,17 +134,21 @@ html {
   margin-top: 5px }
 .paper .button {
   display: inline-block;
+  width: 105px;
   height: 25px;
-  padding: 0 25px;
+  padding: 0 10px;
   font-weight: 100;
   line-height: 25px;
-  border: 1px solid #6A0DAD; /* Purple border */
-  color: #6A0DAD; /* Purple text and border */
+  border: 1px solid #0046AC;
+  color: #0046AC;
   transition: background-color 0.3s ease-in-out;
   text-transform: none; }
 /* Hover effect */
 .paper .button:hover {
-    background: rgba(106, 13, 173, 0.08); /* Purple with 70% opacity */
+    background: rgba(0, 70, 172, 0.08);
+    border-color: #0046AC;
+    color: #0046AC;
+    text-decoration: none;
 }
 
 @media (min-width: 751px) {
