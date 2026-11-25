@@ -1,7 +1,9 @@
 # _data/visiting.yaml
 html: |
     <ul>
-        <li>Reviewer of NeurIPS (2025)</li>
+        <li>Reviewer of NeurIPS 2025, 2026 (Top Reviewer)</li>
+        <li>Reviewer of ICLR (2027)</li>
+        <li>Reviewer of IEEE Internet of Things Journal</li>
         <li>Reviewer of IEEE Transactions on Signal Processing</li>
         <li>Reviewer of IEEE Transactions on Signal and Information Processing over Networks</li>
         <li>Reviewer of IEEE Transactions on Automatic Control</li>
